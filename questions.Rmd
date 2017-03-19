@@ -1,0 +1,22 @@
+---
+title: "Questions"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+Possible questions to answer:
+
+What are the top (perhaps 5) contributing factors for bike accidents?
+What are the top (perhaps 5) contributing factors for bike accidents, specifically fatalities?
+
+What does the seasonality of bike accidents look like? By borough?
+
+Which borough has the highest percentage of accidents...considering borough population?
+What are top 5 zip codes for accidents (all)? Fatalities?
+
+Have there been any significant changes in what causes bicycle accidents? (i.e., has driver inattention increased?) It looks as though the answer is yes.
