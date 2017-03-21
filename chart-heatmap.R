@@ -47,17 +47,12 @@ bikes3$day_short <- factor(bikes3$day_short, levels = c("Sun", "Mon", "Tue",
 
 
 #Make Heatmap
-
 b <- ggplot(bikes3, aes(x=day_short, y=month, fill = total_cyclists_killed_injured)) +
   geom_tile(colour = "white")  + 
   scale_fill_gradient(low="yellow", high="red", name = "Total Cyclists \nKilled Injured") +
   ggtitle("Calendar Heatmap of Bicycle Injuries in NYC (2012-2015)") +
   ylab("Month") +
   xlab("Day")
-
-b
-ggsave("images/heatmap.png", b, dpi=500)
-
 
 #Another version of heatmap. Basically, just doing some cleanup here.
 b2 <- b + theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(),
